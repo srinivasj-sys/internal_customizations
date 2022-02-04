@@ -1,0 +1,289 @@
+{
+   "layouts": {
+      "base": [
+         {
+            "h": 626,
+            "i": "data_map_tabs",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 114
+         },
+         {
+            "h": 90,
+            "i": "data_map_details",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 6,
+            "x": 0,
+            "y": 44
+         },
+         {
+            "h": 25,
+            "i": "header_container",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         }
+      ],
+      "data_map_details": [
+         [
+            {
+               "h": 50,
+               "i": "objectId",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 0
+            },
+            {
+               "h": 50,
+               "i": "name",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 52
+            },
+            {
+               "h": 80,
+               "i": "description",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 104
+            }
+         ]
+      ],
+      "data_map_tabs": [
+         [],
+         [
+            {
+               "h": 550,
+               "i": "additional_comments",
+               "minH": 236,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 4,
+               "y": 0
+            },
+            {
+               "h": 286,
+               "i": "documentation_attachments",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 16
+            },
+            {
+               "h": 241,
+               "i": "documentation_links",
+               "minH": 54,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 312
+            }
+         ]
+      ],
+      "header_container": [
+         [
+            {
+               "h": 26,
+               "i": "save",
+               "minH": 26,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 1,
+               "x": 11,
+               "y": 0
+            },
+            {
+               "h": 31,
+               "i": "data_map_name_readonly",
+               "minH": 24,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 9
+            }
+         ]
+      ]
+   },
+   "page": {
+      "entrypoints": {
+         "draft": {
+            "name": "onDataMapDraftLoad"
+         },
+         "edit": {
+            "name": "onDataMapEditLoad"
+         }
+      },
+      "events": {
+         "onAnyEvent": {
+            "name": "onAnyEvent"
+         },
+         "onTabClose": {
+            "name": "onTabClose"
+         }
+      },
+      "props": {
+         "description": "",
+         "icon": "base://MAPPED_VALUES",
+         "id": "DataMap",
+         "label": "Data Map",
+         "tabLabel": ""
+      }
+   },
+   "structure": {
+      "base": [
+         {
+            "compName": "TabView",
+            "id": "data_map_tabs",
+            "label": "appbuilder.toolboxitem.tabview.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 2
+            }
+         },
+         {
+            "compName": "Accordion",
+            "id": "data_map_details",
+            "label": "appbuilder.toolboxitem.accordion.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {}
+         },
+         {
+            "compName": "GroupableContainer",
+            "id": "header_container",
+            "label": "appbuilder.toolboxitem.groupableContainer.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 0,
+               "headers": [
+                  "default"
+               ]
+            }
+         }
+      ],
+      "data_map_details": [
+         [
+            {
+               "compName": "InputText",
+               "fieldName": "objectId",
+               "id": "objectId",
+               "libName": "base",
+               "parentId": "data_map_details",
+               "props": {}
+            },
+            {
+               "compName": "InputText",
+               "events": {
+                  "onChange": {
+                     "name": "onDataMapNameChange"
+                  }
+               },
+               "fieldName": "name",
+               "id": "name",
+               "libName": "base",
+               "parentId": "data_map_details",
+               "props": {}
+            },
+            {
+               "compName": "InputTextarea",
+               "fieldName": "description",
+               "id": "description",
+               "libName": "base",
+               "parentId": "data_map_details",
+               "props": {
+                  "rows": 3
+               }
+            }
+         ]
+      ],
+      "data_map_tabs": [
+         [],
+         [
+            {
+               "compName": "Comments",
+               "fieldName": "additional_comments",
+               "id": "additional_comments",
+               "libName": "base",
+               "parentId": "data_map_tabs",
+               "props": {}
+            },
+            {
+               "compName": "RGFAttachments",
+               "fieldName": "documentation_attachments",
+               "id": "documentation_attachments",
+               "libName": "base",
+               "parentId": "data_map_tabs",
+               "props": {}
+            },
+            {
+               "compName": "Links",
+               "fieldName": "documentation_links",
+               "id": "documentation_links",
+               "libName": "base",
+               "parentId": "data_map_tabs",
+               "props": {}
+            }
+         ]
+      ],
+      "header_container": [
+         [
+            {
+               "compName": "Button",
+               "id": "save",
+               "label": "appbuilder.toolboxitem.button.title",
+               "libName": "base",
+               "parentId": "header_container",
+               "props": {}
+            },
+            {
+               "compName": "ReadonlyFieldWidget",
+               "id": "data_map_name_readonly",
+               "label": "appbuilder.toolboxitem.readonlyfield.title",
+               "libName": "base",
+               "parentId": "header_container",
+               "props": {
+                  "align": "start",
+                  "boldLabel": false,
+                  "boldValue": true,
+                  "colon": false
+               }
+            }
+         ]
+      ]
+   }
+}

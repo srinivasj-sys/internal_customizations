@@ -1,0 +1,138 @@
+{
+   "apiName": "analysisRuns",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Analysis run description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Analysis run name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Analysis Run ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "AnalysisRun",
+   "nameField": "name",
+   "relationships": {
+      "analysisRun_model": {
+         "cardinality": "one",
+         "sourceLabel": "Analysis Run",
+         "sourceLabelPlural": "Analysis Runs",
+         "sourceName": "AnalysisRun",
+         "sourceType": "AnalysisRun",
+         "targetLabel": "Model",
+         "targetLabelPlural": "Models",
+         "targetName": "Model",
+         "targetType": "Model",
+         "type": "lookup",
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

@@ -1,0 +1,312 @@
+{
+   "layouts": {
+      "base": [
+         {
+            "h": 626,
+            "i": "main_tabs",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 402
+         },
+         {
+            "h": 329,
+            "i": "instance_details",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 5,
+            "x": 0,
+            "y": 50
+         },
+         {
+            "h": 50,
+            "i": "save_container",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 8,
+            "x": 4,
+            "y": 0
+         },
+         {
+            "h": 44,
+            "i": "name_readonly",
+            "minH": 24,
+            "minW": 1,
+            "moved": false,
+            "static": false,
+            "w": 3,
+            "x": 0,
+            "y": 0
+         },
+         {
+            "h": 23,
+            "i": "Image",
+            "minH": 1,
+            "minW": 1,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 379
+         }
+      ],
+      "instance_details": [
+         [
+            {
+               "h": 50,
+               "i": "objectId",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 0
+            },
+            {
+               "h": 50,
+               "i": "name",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 52
+            },
+            {
+               "h": 80,
+               "i": "description",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 104
+            }
+         ]
+      ],
+      "main_tabs": [
+         [],
+         [
+            {
+               "h": 550,
+               "i": "additional_comments",
+               "minH": 236,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 4,
+               "y": 0
+            },
+            {
+               "h": 286,
+               "i": "documentation_attachments",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 0
+            },
+            {
+               "h": 241,
+               "i": "documentation_links",
+               "minH": 54,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 287
+            }
+         ]
+      ],
+      "save_container": [
+         [
+            {
+               "h": 26,
+               "i": "save",
+               "minH": 26,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 2,
+               "x": 10,
+               "y": 0
+            }
+         ]
+      ]
+   },
+   "page": {
+      "entrypoints": {
+         "draft": {
+            "name": "onDraftLoad"
+         },
+         "edit": {
+            "name": "onEditLoad"
+         }
+      },
+      "events": {
+         "onAnyEvent": {
+            "name": "onAnyEvent"
+         },
+         "onTabClose": {
+            "name": "onTabClose"
+         }
+      },
+      "props": {
+         "description": "",
+         "icon": "base://REPOSITORY",
+         "id": "AnalysisData",
+         "label": "AnalysisData",
+         "tabLabel": ""
+      }
+   },
+   "structure": {
+      "base": [
+         {
+            "compName": "TabView",
+            "id": "main_tabs",
+            "label": "appbuilder.toolboxitem.tabview.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 0
+            }
+         },
+         {
+            "compName": "Accordion",
+            "id": "instance_details",
+            "label": "appbuilder.toolboxitem.accordion.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {}
+         },
+         {
+            "compName": "GroupableContainer",
+            "id": "save_container",
+            "label": "appbuilder.toolboxitem.groupableContainer.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 0,
+               "headers": [
+                  "default"
+               ]
+            }
+         },
+         {
+            "compName": "ReadonlyFieldWidget",
+            "id": "name_readonly",
+            "label": "appbuilder.toolboxitem.readonlyfield.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "align": "start",
+               "boldValue": true,
+               "stacked": false
+            }
+         },
+         {
+            "compName": "Image",
+            "id": "Image",
+            "label": "appbuilder.toolboxitem.image.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {}
+         }
+      ],
+      "instance_details": [
+         [
+            {
+               "compName": "InputText",
+               "fieldName": "objectId",
+               "id": "objectId",
+               "libName": "base",
+               "parentId": "instance_details",
+               "props": {}
+            },
+            {
+               "compName": "InputText",
+               "events": {
+                  "onChange": {
+                     "name": "onNameChange"
+                  }
+               },
+               "fieldName": "name",
+               "id": "name",
+               "libName": "base",
+               "parentId": "instance_details",
+               "props": {}
+            },
+            {
+               "compName": "InputTextarea",
+               "fieldName": "description",
+               "id": "description",
+               "libName": "base",
+               "parentId": "instance_details",
+               "props": {
+                  "rows": 3
+               }
+            }
+         ]
+      ],
+      "main_tabs": [
+         [],
+         [
+            {
+               "compName": "Comments",
+               "fieldName": "additional_comments",
+               "id": "additional_comments",
+               "libName": "base",
+               "parentId": "main_tabs",
+               "props": {}
+            },
+            {
+               "compName": "RGFAttachments",
+               "fieldName": "documentation_attachments",
+               "id": "documentation_attachments",
+               "libName": "base",
+               "parentId": "main_tabs",
+               "props": {}
+            },
+            {
+               "compName": "Links",
+               "fieldName": "documentation_links",
+               "id": "documentation_links",
+               "libName": "base",
+               "parentId": "main_tabs",
+               "props": {}
+            }
+         ]
+      ],
+      "save_container": [
+         [
+            {
+               "compName": "Button",
+               "events": {
+                  "click": {
+                     "name": "onSave"
+                  }
+               },
+               "id": "save",
+               "label": "appbuilder.toolboxitem.button.title",
+               "libName": "base",
+               "parentId": "save_container",
+               "props": {}
+            }
+         ]
+      ]
+   }
+}

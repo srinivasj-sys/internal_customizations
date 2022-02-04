@@ -1,0 +1,318 @@
+{
+   "apiName": "scripts",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "codeEditor": {
+         "id": "codeEditor",
+         "label": "Code Editor",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Script description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "engineCd": {
+         "id": "engineCd",
+         "label": "Engine",
+         "props": {
+            "options": [
+               {
+                  "label": "SAS",
+                  "value": "SAS"
+               },
+               {
+                  "label": "Lua",
+                  "value": "LUA"
+               },
+               {
+                  "label": "Model Implementation Platform",
+                  "value": "MIP"
+               },
+               {
+                  "label": "R language",
+                  "value": "R"
+               },
+               {
+                  "label": "Python",
+                  "value": "PYTHON"
+               },
+               {
+                  "label": "SAS Model Manager",
+                  "value": "VIYAMM"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "independentRunFlg": {
+         "id": "independentRunFlg",
+         "label": "Can this be run independently of a cycle?",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "CheckboxField",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Script name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Script ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "parameters": {
+         "id": "parameters",
+         "label": "Parameters",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "rolesForIndependentRun": {
+         "id": "rolesForIndependentRun",
+         "label": "Roles for independent run",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "statusCd": {
+         "id": "statusCd",
+         "label": "Script status",
+         "props": {
+            "options": [
+               {
+                  "label": "Developing",
+                  "value": "DEV"
+               },
+               {
+                  "label": "Review",
+                  "value": "REVIEW"
+               },
+               {
+                  "label": "Testing",
+                  "value": "TEST"
+               },
+               {
+                  "label": "Production",
+                  "value": "PROD"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "typeCd": {
+         "id": "typeCd",
+         "label": "Model type",
+         "props": {
+            "options": [
+               {
+                  "label": "Attribution analysis",
+                  "value": "AA"
+               },
+               {
+                  "label": "Data adjustment",
+                  "value": "DA"
+               },
+               {
+                  "label": "Data quality",
+                  "value": "DQ"
+               },
+               {
+                  "label": "Enrichment",
+                  "value": "ENRICH"
+               },
+               {
+                  "label": "Initialization",
+                  "value": "INIT"
+               },
+               {
+                  "label": "Other",
+                  "value": "OTH"
+               },
+               {
+                  "label": "Reporting",
+                  "value": "RPT"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "Script",
+   "nameField": "name",
+   "relationships": {},
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

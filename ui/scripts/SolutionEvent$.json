@@ -1,0 +1,373 @@
+{
+   "menuItemSwitch": {
+      "inputs": [
+         {
+            "datatype": "text",
+            "name": "input_userGroup"
+         }
+      ],
+      "logic": [
+         {
+            "action": "setvar",
+            "id": "bdd0db8c-f8a8-4ef2-8656-e0eaf1dd559e",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": "CoreAdmin"
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "adminGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "118e7dfb-e740-44d7-b081-1e129411ccd7",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": " "
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "spacer",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "93228228-dd87-4696-a131-e1cc0f413918",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": "CoreModelDeveloper"
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "modelDevGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "d610fd42-205d-45dc-893e-565f7a1efaaf",
+            "type": "calculated",
+            "value": {
+               "function": "strEquals",
+               "library": "CirrusLibString",
+               "params": {
+                  "string1": {
+                     "datatype": "text",
+                     "name": "input_userGroup",
+                     "scope": "local"
+                  },
+                  "string2": {
+                     "datatype": "text",
+                     "name": "adminGroup",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "boolean"
+            },
+            "variable": {
+               "datatype": "boolean",
+               "name": "isAdminGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "ae73c796-ff0b-4002-b30d-b62a83dcdac5",
+            "type": "calculated",
+            "value": {
+               "function": "strEquals",
+               "library": "CirrusLibString",
+               "params": {
+                  "string1": {
+                     "datatype": "text",
+                     "name": "input_userGroup",
+                     "scope": "local"
+                  },
+                  "string2": {
+                     "datatype": "text",
+                     "name": "modelDevGroup",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "boolean"
+            },
+            "variable": {
+               "datatype": "boolean",
+               "name": "isModelDevGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "ifelse",
+            "id": "d45b9177-a658-4111-a63d-ac5261626456",
+            "test": {
+               "datatype": "boolean",
+               "name": "isAdminGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "ac7f7d5e-bcb1-4cc8-847c-d618951ffcc5",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": "Home Search Cycles Findings AnalysisDataInventory AnalysisRuns Scripts Models DataMaps DataDefinitions WorkflowTemplates AttributionTemplates DataLoad"
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "adminMenuItemsRaw",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "5aa149cd-21b7-4702-99e3-3497092b5c45",
+            "type": "calculated",
+            "value": {
+               "function": "split",
+               "library": "CirrusLibString",
+               "params": {
+                  "separator": {
+                     "datatype": "text",
+                     "name": "spacer",
+                     "scope": "local"
+                  },
+                  "string": {
+                     "datatype": "text",
+                     "name": "adminMenuItemsRaw",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "text array"
+            },
+            "variable": {
+               "datatype": "text array",
+               "name": "adminMenuItems",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "returnvar",
+            "id": "07531e97-9a72-4927-9d84-f7b902fcf770",
+            "variable": {
+               "datatype": "text array",
+               "name": "adminMenuItems",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "ifelse",
+            "end": true,
+            "id": "8b047174-1d2d-4faf-82e7-a90b728bb714",
+            "main": "d45b9177-a658-4111-a63d-ac5261626456",
+            "test": {
+               "datatype": "boolean",
+               "name": "isAdminGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "ifelse",
+            "id": "46497d63-18d9-4436-8400-25474a474ac9",
+            "test": {
+               "datatype": "boolean",
+               "name": "isModelDevGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "7a3f34f9-47d6-4c9f-8ea1-de286ec9a1bb",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": "home"
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "modelDevMenuItemsRaw",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "6d7d4a91-9f1c-4b80-8f9f-8184d5a4cb18",
+            "type": "calculated",
+            "value": {
+               "function": "split",
+               "library": "CirrusLibString",
+               "params": {
+                  "separator": {
+                     "datatype": "text",
+                     "name": "spacer",
+                     "scope": "local"
+                  },
+                  "string": {
+                     "datatype": "text",
+                     "name": "modelDevMenuItemsRaw",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "text array"
+            },
+            "variable": {
+               "datatype": "text array",
+               "name": "modelDevMenuItems",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "returnvar",
+            "id": "bc3125ee-c427-4cd0-b1b2-16dd13d864d8",
+            "variable": {
+               "datatype": "text array",
+               "name": "modelDevMenuItems",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "ifelse",
+            "end": true,
+            "id": "0b1526aa-6522-48dc-8898-228a1b460ed8",
+            "main": "46497d63-18d9-4436-8400-25474a474ac9",
+            "test": {
+               "datatype": "boolean",
+               "name": "isModelDevGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "537baf1d-3c6d-4133-bff7-53f4c35781f4",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": ""
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "noneRaw",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "14db1d93-920c-4805-aba7-d96166103030",
+            "type": "calculated",
+            "value": {
+               "function": "split",
+               "library": "CirrusLibString",
+               "params": {
+                  "separator": {
+                     "datatype": "text",
+                     "name": "spacer",
+                     "scope": "local"
+                  },
+                  "string": {
+                     "datatype": "text",
+                     "name": "noneRaw",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "text array"
+            },
+            "variable": {
+               "datatype": "text array",
+               "name": "none",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "returnvar",
+            "id": "1d38aaca-0ff3-4565-9c7a-3015c35b05b5",
+            "variable": {
+               "datatype": "text array",
+               "name": "none",
+               "scope": "local"
+            }
+         }
+      ]
+   },
+   "onFirstLoad": {
+      "inputs": [],
+      "logic": [
+         {
+            "action": "setvar",
+            "id": "e6f188ec-c9f0-4641-a2cb-5d593cc5ccc6",
+            "type": "fixed",
+            "value": {
+               "datatype": "text",
+               "dataval": "CoreAdmin"
+            },
+            "variable": {
+               "datatype": "text",
+               "name": "userGroup",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "8ec87c99-7fb8-434e-9f60-866397de288a",
+            "type": "calculated",
+            "value": {
+               "function": "menuItemSwitch",
+               "library": "$interactions$",
+               "params": {
+                  "input_userGroup": {
+                     "datatype": "text",
+                     "name": "userGroup",
+                     "scope": "local"
+                  }
+               },
+               "returnType": "text array"
+            },
+            "variable": {
+               "datatype": "text array",
+               "name": "menuItemIDs",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "setvar",
+            "id": "fe12de2b-6b91-4951-97de-21d46d0825bb",
+            "type": "fixed",
+            "value": {
+               "datatype": "boolean",
+               "dataval": false
+            },
+            "variable": {
+               "datatype": "boolean",
+               "name": "false",
+               "scope": "local"
+            }
+         },
+         {
+            "action": "execfunc",
+            "function": "setMenuItems",
+            "id": "4e5b1eb5-44ab-41d8-bd51-fab3e6fc2577",
+            "library": "CirrusLibMenu",
+            "params": {
+               "menuItemIDs": {
+                  "datatype": "text array",
+                  "name": "menuItemIDs",
+                  "scope": "local"
+               }
+            }
+         },
+         {
+            "action": "execfunc",
+            "function": "loadUserCapabilities",
+            "id": "daabd76c-e3e9-46bf-9880-6796a3b87089",
+            "library": "CirrusLibCirrusObject",
+            "params": {}
+         }
+      ]
+   }
+}

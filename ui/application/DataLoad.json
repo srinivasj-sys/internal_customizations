@@ -1,0 +1,43 @@
+{
+   "layouts": {
+      "base": [
+         {
+            "h": 600,
+            "i": "RGFDataLoad",
+            "minH": 150,
+            "minW": 5,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         }
+      ]
+   },
+   "page": {
+      "events": {
+         "onTabClose": {}
+      },
+      "props": {
+         "description": "",
+         "icon": "base://SOURCE_DATABASE",
+         "id": "DataLoad",
+         "label": "DataLoad",
+         "tabLabel": "Data Load"
+      }
+   },
+   "structure": {
+      "base": [
+         {
+            "compName": "RGFDataLoad",
+            "id": "RGFDataLoad",
+            "label": "RGF Data Load",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "ignoreTabs": "UI"
+            }
+         }
+      ]
+   }
+}

@@ -1,0 +1,162 @@
+{
+   "apiName": "dataMaps",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Data map description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "mapType": {
+         "id": "mapType",
+         "label": "Data map type",
+         "props": {
+            "options": [
+               {
+                  "label": "Model",
+                  "value": "ENRICHMENT"
+               },
+               {
+                  "label": "Financial statement projection",
+                  "value": "MODEL"
+               },
+               {
+                  "label": "Enrichment",
+                  "value": "CR_DETAIL"
+               },
+               {
+                  "label": "Credit risk detail",
+                  "value": "FS_PROJECTION"
+               },
+               {
+                  "label": "Other",
+                  "value": "SUBLEDGER"
+               },
+               {
+                  "label": "Subledger",
+                  "value": "OTHER"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Data map name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Data Map ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "DataMap",
+   "nameField": "name",
+   "relationships": {},
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

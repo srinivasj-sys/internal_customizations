@@ -1,0 +1,15 @@
+{
+   "objects": [
+      "AnalysisData",
+      "AnalysisRun",
+      "AttributionTemplate",
+      "Cycle",
+      "DataDefinition",
+      "DataMap",
+      "Finding",
+      "Model",
+      "Script",
+      "User",
+      "WorkflowTemplate"
+   ]
+}

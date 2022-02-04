@@ -1,0 +1,258 @@
+{
+   "apiName": "workflowTemplates",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "createNewDefinition": {
+         "id": "createNewDefinition",
+         "index": 1,
+         "label": "Create a new workflow template or select an existing one?",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "RadioButtonField",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Workflow template description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "input_file_attachment": {
+         "id": "input_file_attachment",
+         "label": "Workflow template file",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Workflow template name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Workflow template ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectType": {
+         "id": "objectType",
+         "index": 4,
+         "label": "Object type",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "wfDefinitionName": {
+         "id": "wfDefinitionName",
+         "index": 5,
+         "label": "Workflow definition name",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "WorkflowDefinitionSelector",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "wfDefinitionRevision": {
+         "id": "wfDefinitionRevision",
+         "label": "Workflow definition revision",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputNumberComponent",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "wfDiagram": {
+         "id": "wfDiagram",
+         "label": "Workflow diagram",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "wfTaskDetails": {
+         "id": "wfTaskDetails",
+         "label": "Workflow task details",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "TaskDetails",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "WorkflowTemplate",
+   "index": 10,
+   "labelPlural": "WorkflowTemplates",
+   "labelSingular": "WorkflowTemplate",
+   "nameField": "name",
+   "relationships": {
+      "wfTemplate_cycle": {
+         "cardinality": "one",
+         "index": 0,
+         "label": "Workflow Templates",
+         "sourceLabel": "Workflow Template",
+         "sourceLabelPlural": "Workflow Templates",
+         "sourceName": "workflowTemplate",
+         "sourceType": "WorkflowTemplate",
+         "targetLabel": "Cycle",
+         "targetLabelPlural": "Cycles",
+         "targetName": "cycle",
+         "targetType": "Cycle",
+         "type": "lookup",
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true,
+   "tasks": {}
+}

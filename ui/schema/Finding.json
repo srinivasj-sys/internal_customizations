@@ -1,0 +1,508 @@
+{
+   "apiName": "findings",
+   "bulkAPI": true,
+   "fields": {
+      "action_plan_assessment": {
+         "id": "action_plan_assessment",
+         "label": "Action plan assessment",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "action_plan_closed_on": {
+         "id": "action_plan_closed_on",
+         "label": "Date action plan closed on",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "action_plan_created_on": {
+         "id": "action_plan_created_on",
+         "label": "Date action plan created on",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "action_plan_description": {
+         "id": "action_plan_description",
+         "label": "Describe the action plan",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "action_plan_due_on": {
+         "id": "action_plan_due_on",
+         "label": "Date action plan due on",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "action_plan_priority": {
+         "id": "action_plan_priority",
+         "label": "Action plan priority",
+         "props": {
+            "options": [
+               {
+                  "label": "Critical",
+                  "value": "CRITICAL"
+               },
+               {
+                  "label": "High",
+                  "value": "HIGH"
+               },
+               {
+                  "label": "Moderate",
+                  "value": "MODERATE"
+               },
+               {
+                  "label": "Low",
+                  "value": "LOW"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "category": {
+         "id": "category",
+         "label": "Finding category",
+         "props": {
+            "options": [
+               {
+                  "label": "Not applicable",
+                  "value": "NA"
+               },
+               {
+                  "label": "Data integrity",
+                  "value": "DATA_INTEGRITY"
+               },
+               {
+                  "label": "Model documentation",
+                  "value": "MODEL_DOCUMENTATION"
+               },
+               {
+                  "label": "Model methodology",
+                  "value": "MODEL_METHODOLOGY"
+               },
+               {
+                  "label": "Model usage",
+                  "value": "MODEL_USAGE"
+               },
+               {
+                  "label": "Ongoing model review",
+                  "value": "MODEL_REVIEW"
+               },
+               {
+                  "label": "Ongoing performance tracking alert",
+                  "value": "PERFORMANCE_TRACKING"
+               },
+               {
+                  "label": "Process improvement",
+                  "value": "PROCESS_IMPROVEMENT"
+               },
+               {
+                  "label": "Usage validation",
+                  "value": "USAGE_VALIDATION"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "current_due_date": {
+         "id": "current_due_date",
+         "label": "Current due date",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Finding description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Finding name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Finding ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "original_due_date": {
+         "id": "original_due_date",
+         "label": "Original due date",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "other_validation_activity": {
+         "id": "other_validation_activity",
+         "label": "Describe the validation activity",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "recommended_resolution": {
+         "id": "recommended_resolution",
+         "label": "Recommended resolution",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "resolved_on": {
+         "id": "resolved_on",
+         "label": "Date finding resolved on",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "review_type": {
+         "id": "review_type",
+         "label": "Finding review type",
+         "props": {
+            "options": [
+               {
+                  "label": "",
+                  "value": "AR"
+               },
+               {
+                  "label": "",
+                  "value": "FSV"
+               },
+               {
+                  "label": "",
+                  "value": "MMM"
+               },
+               {
+                  "label": "",
+                  "value": "MPV"
+               },
+               {
+                  "label": "",
+                  "value": "OTH"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "severity_tier": {
+         "id": "severity_tier",
+         "label": "Severity tier",
+         "props": {
+            "options": [
+               {
+                  "label": "Critical",
+                  "value": "CRITICAL"
+               },
+               {
+                  "label": "High",
+                  "value": "HIGH"
+               },
+               {
+                  "label": "Moderate",
+                  "value": "MODERATE"
+               },
+               {
+                  "label": "Low",
+                  "value": "LOW"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "status": {
+         "id": "status",
+         "label": "Finding status",
+         "props": {
+            "options": [
+               {
+                  "label": "Draft",
+                  "value": "DRAFT"
+               },
+               {
+                  "label": "Open",
+                  "value": "OPEN"
+               },
+               {
+                  "label": "Pending",
+                  "value": "PENDING"
+               },
+               {
+                  "label": "Waiting for approval",
+                  "value": "WAIT_FOR_APPROVAL"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "validation_activity": {
+         "id": "validation_activity",
+         "label": "Validation activity",
+         "props": {
+            "options": [
+               {
+                  "label": "Not applicable",
+                  "value": "NA"
+               },
+               {
+                  "label": "Back testing",
+                  "value": "BACK_TESTING"
+               },
+               {
+                  "label": "Benchmarking",
+                  "value": "BENCHMARKING"
+               },
+               {
+                  "label": "Data evaluation",
+                  "value": "DATA_EVALUATION"
+               },
+               {
+                  "label": "Documentation completeness",
+                  "value": "DOC_COMPLETE"
+               },
+               {
+                  "label": "General ongoing monitoring",
+                  "value": "ONGOING_MONITORING"
+               },
+               {
+                  "label": "Model limitations and assumptions review",
+                  "value": "MODEL_REVIEW"
+               },
+               {
+                  "label": "Model variable assessment",
+                  "value": "VAR_ASSESSMENT"
+               },
+               {
+                  "label": "Output analysis",
+                  "value": "OUTPUT_ANALYSIS"
+               },
+               {
+                  "label": "Overall conceptual soundness",
+                  "value": "CONCEPTUAL_SOUNDNESS"
+               },
+               {
+                  "label": "Override analysis",
+                  "value": "OVERRIDE_ANALYSIS"
+               },
+               {
+                  "label": "Process verification",
+                  "value": "PROCESS_VERIFICATION"
+               },
+               {
+                  "label": "Sensitivity analysis",
+                  "value": "SENSITIVITY_ANALYSIS"
+               },
+               {
+                  "label": "Other",
+                  "value": "OTHER"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "Finding",
+   "nameField": "name",
+   "relationships": {},
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

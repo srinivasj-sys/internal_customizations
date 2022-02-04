@@ -1,0 +1,252 @@
+{
+   "cirrusCoreSolution": {
+      "branch": "main",
+      "name": "Core"
+   },
+   "description": "This is MRM based on cirrus-core.",
+   "displayName": "SAS® Model Risk Management",
+   "events": {
+      "onFirstLoad": {
+         "name": "onFirstLoad"
+      }
+   },
+   "helpUrl": "https://documentation.sas.com/?requestor=inapp\u0026locale={locale}",
+   "home": "Home",
+   "id": "MRM",
+   "isCore": "false",
+   "libraries": [
+      "CirrusLibCore@1.0.0"
+   ],
+   "menu": [
+      {
+         "icon": "base://GROOVE_HOME",
+         "id": "Home",
+         "pageId": "Home",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_ANALYSIS",
+         "id": "Search",
+         "pageId": "Search",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_TASK",
+         "id": "Cycles",
+         "pageId": "Cycles",
+         "type": "item"
+      },
+      {
+         "id": "IssuesGroup",
+         "type": "group"
+      },
+      {
+         "icon": "base://GROOVE_ISSUE",
+         "id": "Findings",
+         "pageId": "Findings",
+         "type": "item"
+      },
+      {
+         "id": "AnalysisGroup",
+         "type": "group"
+      },
+      {
+         "icon": "base://GROOVE_REPOSITORY",
+         "id": "AnalysisDataInventory",
+         "pageId": "AnalysisDataInventory",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_FORECAST_PROJECT",
+         "id": "AnalysisRuns",
+         "pageId": "AnalysisRuns",
+         "type": "item"
+      },
+      {
+         "id": "ConfigurationGroup",
+         "type": "group"
+      },
+      {
+         "icon": "base://SAS_NOTEBOOK",
+         "id": "Scripts",
+         "pageId": "Scripts",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_MODELS",
+         "id": "Models",
+         "pageId": "Models",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_MAPPED_VALUES",
+         "id": "DataMaps",
+         "pageId": "DataMaps",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_SAS_FOLDERS",
+         "id": "DataDefinitions",
+         "pageId": "DataDefinitions",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_DECISIONS",
+         "id": "WorkflowTemplates",
+         "pageId": "WorkflowTemplates",
+         "type": "item"
+      },
+      {
+         "icon": "base://GROOVE_DASHBOARD_PERSONAL",
+         "id": "AttributionTemplates",
+         "pageId": "AttributionTemplates",
+         "type": "item"
+      },
+      {
+         "id": "SettingsGroup",
+         "type": "group"
+      },
+      {
+         "icon": "base://GROOVE_SOURCE_DATABASE",
+         "id": "DataLoad",
+         "pageId": "DataLoad",
+         "type": "item"
+      }
+   ],
+   "pages": {
+      "AnalysisData": {
+         "isTemplate": false,
+         "name": "Analysis Data",
+         "object": "AnalysisData",
+         "type": "object"
+      },
+      "AnalysisDataInventory": {
+         "isTemplate": false,
+         "name": "Analysis Data Inventory",
+         "type": "application"
+      },
+      "AnalysisRun": {
+         "isTemplate": false,
+         "name": "Analysis Run",
+         "object": "AnalysisRun",
+         "type": "object"
+      },
+      "AnalysisRuns": {
+         "isTemplate": false,
+         "name": "Analysis Runs",
+         "type": "application"
+      },
+      "AttributionTemplate": {
+         "isTemplate": false,
+         "name": "Attribution Template",
+         "object": "AttributionTemplate",
+         "type": "object"
+      },
+      "AttributionTemplates": {
+         "isTemplate": false,
+         "name": "Attribution Templates",
+         "type": "application"
+      },
+      "Cycle": {
+         "isTemplate": false,
+         "name": "Cycle",
+         "object": "Cycle",
+         "type": "object"
+      },
+      "Cycles": {
+         "isTemplate": false,
+         "name": "Cycles",
+         "type": "application"
+      },
+      "DataDefinition": {
+         "isTemplate": false,
+         "name": "Data Definition",
+         "object": "DataDefinition",
+         "type": "object"
+      },
+      "DataDefinitions": {
+         "isTemplate": false,
+         "name": "Data Definitions",
+         "type": "application"
+      },
+      "DataLoad": {
+         "isTemplate": false,
+         "name": "Data Load",
+         "type": "application"
+      },
+      "DataMap": {
+         "isTemplate": false,
+         "name": "Data Map",
+         "object": "DataMap",
+         "type": "object"
+      },
+      "DataMaps": {
+         "isTemplate": false,
+         "name": "Data Maps",
+         "type": "application"
+      },
+      "Finding": {
+         "isTemplate": false,
+         "name": "Finding",
+         "object": "AnalysisRun",
+         "type": "object"
+      },
+      "Findings": {
+         "isTemplate": false,
+         "name": "Findings",
+         "type": "application"
+      },
+      "Home": {
+         "name": "Home",
+         "type": "application"
+      },
+      "Model": {
+         "isTemplate": false,
+         "name": "Model",
+         "object": "Model",
+         "type": "object"
+      },
+      "Models": {
+         "isTemplate": false,
+         "name": "Models",
+         "type": "application"
+      },
+      "ObjectManagerTemplate": {
+         "isTemplate": true,
+         "name": "Object Manager Template",
+         "type": "application"
+      },
+      "Script": {
+         "isTemplate": false,
+         "name": "Script",
+         "object": "Script",
+         "type": "object"
+      },
+      "Scripts": {
+         "isTemplate": false,
+         "name": "Scripts",
+         "type": "application"
+      },
+      "Search": {
+         "isTemplate": false,
+         "name": "Search",
+         "type": "application",
+         "urlRx": "/^\\/Search\\/searchId\\/[^/]+/"
+      },
+      "WorkflowTemplate": {
+         "isTemplate": false,
+         "name": "Workflow Template",
+         "object": "WorkflowTemplate",
+         "type": "object"
+      },
+      "WorkflowTemplates": {
+         "isTemplate": false,
+         "name": "Workflow Templates",
+         "type": "application"
+      }
+   },
+   "path": "/MRM",
+   "schema": "Core",
+   "shortName": "MRM",
+   "version": "1"
+}

@@ -1,0 +1,383 @@
+{
+   "apiName": "models",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "codeEditor": {
+         "id": "codeEditor",
+         "label": "Code Editor",
+         "props": {
+            "maxLength": 1
+         },
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Model description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "engineCd": {
+         "id": "engineCd",
+         "label": "Engine",
+         "props": {
+            "options": [
+               {
+                  "label": "SAS",
+                  "value": "SAS"
+               },
+               {
+                  "label": "Lua",
+                  "value": "LUA"
+               },
+               {
+                  "label": "Model Implementation Platform",
+                  "value": "MIP"
+               },
+               {
+                  "label": "R language",
+                  "value": "R"
+               },
+               {
+                  "label": "Python",
+                  "value": "PYTHON"
+               },
+               {
+                  "label": "SAS Model Manager",
+                  "value": "VIYAMM"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Model name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Model ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "parameters": {
+         "id": "parameters",
+         "label": "Parameters",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "postCodeEditor": {
+         "id": "postCodeEditor",
+         "label": "Post-run code",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "postCodeFlg": {
+         "id": "postCodeFlg",
+         "label": "Do you want to run post-code?",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "CheckboxField",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "preCodeEditor": {
+         "id": "preCodeEditor",
+         "label": "Pre-run code",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "preCodeFlg": {
+         "id": "preCodeFlg",
+         "label": "Do you want to run pre-code?",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "CheckboxField",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "scenWeightFlg": {
+         "id": "scenWeightFlg",
+         "label": "Perform Scenario Weighting?",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "CheckboxField",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "statusCd": {
+         "id": "statusCd",
+         "label": "Model status",
+         "props": {
+            "options": [
+               {
+                  "label": "Developing",
+                  "value": "DEV"
+               },
+               {
+                  "label": "Review",
+                  "value": "REVIEW"
+               },
+               {
+                  "label": "Testing",
+                  "value": "TEST"
+               },
+               {
+                  "label": "Production",
+                  "value": "PROD"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "typeCd": {
+         "id": "typeCd",
+         "label": "Model type",
+         "props": {
+            "options": [
+               {
+                  "label": "Credit risk",
+                  "value": "CRED"
+               },
+               {
+                  "label": "Financial risk",
+                  "value": "FIN"
+               },
+               {
+                  "label": "Interest rate risk",
+                  "value": "IRR"
+               },
+               {
+                  "label": "Market risk",
+                  "value": "MKT"
+               },
+               {
+                  "label": "Operational risk",
+                  "value": "OPR"
+               },
+               {
+                  "label": "Other",
+                  "value": "OTH"
+               }
+            ]
+         },
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "Model",
+   "nameField": "name",
+   "relationships": {
+      "analysisRun_model": {
+         "cardinality": "one",
+         "sourceLabel": "Analysis Run",
+         "sourceLabelPlural": "Analysis Runs",
+         "sourceName": "AnalysisRun",
+         "sourceType": "AnalysisRun",
+         "targetLabel": "Model",
+         "targetLabelPlural": "Models",
+         "targetName": "Model",
+         "targetType": "Model",
+         "type": "lookup",
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

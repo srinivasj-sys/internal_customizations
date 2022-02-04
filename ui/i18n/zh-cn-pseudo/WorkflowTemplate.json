@@ -1,0 +1,15 @@
+{
+   "WorkflowTemplate.WorkflowTemplate.schema.field.createNewDefinition.label": "XCreate a new workflow template or select an existing one?'补Z",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.input_file_attachment.label": "XWorkflow template file'补Z",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType.help.label": "XThe list of dropdown choices is based on the object registrations for which workflow has been enabled via the workflowEnabled property.'补Z",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType_1.help.label": "XThe list of dropdown choices is based on the object registrations for which workflow has been enabled via the workflowEnabled property.'补Z",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName.label": "XWorkflow definition name'补Z",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName_1.label": "XWorkflow definition name'补Z",
+   "WorkflowTemplate.library.label.base.Accordion.instance_details.0.title": "XWorkflow Template Details'补Z",
+   "WorkflowTemplate.library.label.base.Button.save.label": "XSave'补Z",
+   "WorkflowTemplate.library.label.base.ReadonlyFieldWidget.name_readonly.label": "X'补Z",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.0.title": "XTask Details'补Z",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.1.title": "XDocumentation'补Z",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.2.title": "XRelationships'补Z",
+   "WorkflowTemplate.library.label.base.TabView.save_container.0.title": "XSave'补Z"
+}

@@ -1,0 +1,55 @@
+{
+   "layouts": {
+      "base": [
+         {
+            "h": 782,
+            "i": "SearchTab",
+            "minH": 50,
+            "minW": 12,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         }
+      ]
+   },
+   "page": {
+      "entrypoints": {
+         "__default__": {
+            "name": "doSearch",
+            "noInputFallback": true
+         }
+      },
+      "events": {
+         "onTabClose": {}
+      },
+      "props": {
+         "description": "",
+         "icon": "base://ANALYSIS",
+         "id": "Search",
+         "label": "Search",
+         "tabLabel": "Search"
+      }
+   },
+   "structure": {
+      "base": [
+         {
+            "compName": "SearchTab",
+            "events": {
+               "getEditLinkForSearchResult": {
+                  "name": "getEditLinkForObjectInstance"
+               },
+               "onClickSearchResult": {
+                  "name": "getEditLinkForObjectInstance"
+               }
+            },
+            "id": "SearchTab",
+            "label": "appbuilder.toolboxitem.search.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {}
+         }
+      ]
+   }
+}

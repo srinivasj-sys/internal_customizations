@@ -1,0 +1,15 @@
+{
+   "WorkflowTemplate.WorkflowTemplate.schema.field.createNewDefinition.label": "새로운 워크플로우 템플릿을 생성하거나 기존 템플릿을 선택하시겠습니까?",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.input_file_attachment.label": "워크플로우 템플릿 파일",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType.help.label": "드롭다운 선택 리스트는 workflowEnabled 속성을 통해 워크플로우가 활성화된 개체 등록을 기반으로 합니다.",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType_1.help.label": "드롭다운 선택 리스트는 workflowEnabled 속성을 통해 워크플로우가 활성화된 개체 등록을 기반으로 합니다.",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName.label": "워크플로우 정의 이름",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName_1.label": "워크플로우 정의 이름",
+   "WorkflowTemplate.library.label.base.Accordion.instance_details.0.title": "워크플로우 템플릿 상세 정보",
+   "WorkflowTemplate.library.label.base.Button.save.label": "저장",
+   "WorkflowTemplate.library.label.base.ReadonlyFieldWidget.name_readonly.label": "",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.0.title": "작업 상세 정보",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.1.title": "문서",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.2.title": "관계",
+   "WorkflowTemplate.library.label.base.TabView.save_container.0.title": "저장"
+}

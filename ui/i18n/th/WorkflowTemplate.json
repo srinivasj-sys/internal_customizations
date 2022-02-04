@@ -1,0 +1,15 @@
+{
+   "WorkflowTemplate.WorkflowTemplate.schema.field.createNewDefinition.label": "สร้างเทมเพลตเวิร์กโฟลว์ใหม่หรือเลือกจากเทมเพลตที่มีอยู่",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.input_file_attachment.label": "ไฟล์เทมเพลตเวิร์กโฟลว์",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType.help.label": "รายการของตัวเลือกดรอปดาวน์อิงตามการลงทะเบียนออบเจ็กต์ที่ซึ่งเวิร์กโฟลว์ถูกเปิดใช้งานผ่านคุณสมบัติ workflowEnabled",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.objectType_1.help.label": "รายการของตัวเลือกดรอปดาวน์อิงตามการลงทะเบียนออบเจ็กต์ที่ซึ่งเวิร์กโฟลว์ถูกเปิดใช้งานผ่านคุณสมบัติ workflowEnabled",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName.label": "ชื่อคำจำกัดความของเวิร์กโฟลว์",
+   "WorkflowTemplate.WorkflowTemplate.schema.field.wfDefinitionName_1.label": "ชื่อคำจำกัดความของเวิร์กโฟลว์",
+   "WorkflowTemplate.library.label.base.Accordion.instance_details.0.title": "รายละเอียดเทมเพลตเวิร์กโฟลว์",
+   "WorkflowTemplate.library.label.base.Button.save.label": "บันทึก",
+   "WorkflowTemplate.library.label.base.ReadonlyFieldWidget.name_readonly.label": "",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.0.title": "รายละเอียดของงาน",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.1.title": "การจัดทำเอกสาร",
+   "WorkflowTemplate.library.label.base.TabView.main_tabs.2.title": "ความสัมพันธ์",
+   "WorkflowTemplate.library.label.base.TabView.save_container.0.title": "บันทึก"
+}

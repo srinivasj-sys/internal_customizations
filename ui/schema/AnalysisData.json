@@ -1,0 +1,215 @@
+{
+   "apiName": "analysisData",
+   "bulkAPI": true,
+   "fields": {
+      "additional_comments": {
+         "id": "additional_comments",
+         "label": "Comments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Comments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "baseDate": {
+         "id": "baseDate",
+         "label": "Base date",
+         "props": {},
+         "tableMeta": {},
+         "type": {
+            "compName": "Calendar",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "description": {
+         "id": "description",
+         "label": "Analysis data description",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "InputTextarea",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_attachments": {
+         "id": "documentation_attachments",
+         "label": "Documentation Attachments",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "RGFAttachments",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "documentation_links": {
+         "id": "documentation_links",
+         "label": "Documentation Links",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": false,
+            "isShownByDefault": false,
+            "isSortable": false
+         },
+         "type": {
+            "compName": "Links",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "name": {
+         "id": "name",
+         "label": "Analysis data name",
+         "props": {},
+         "tableMeta": {
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "objectId": {
+         "id": "objectId",
+         "label": "Analysis Data ID",
+         "tableMeta": {
+            "dataType": "string",
+            "isSearchable": true,
+            "isShownByDefault": true,
+            "isSortable": true
+         },
+         "type": {
+            "compName": "InputText",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "resultsCategoryCd": {
+         "id": "resultsCategoryCd",
+         "label": "Results category",
+         "props": {
+            "options": [
+               {
+                  "label": "Financing receivables",
+                  "value": "FR_HTM"
+               },
+               {
+                  "label": "AFS debt securities",
+                  "value": "AFS"
+               },
+               {
+                  "label": "Attribution analysis",
+                  "value": "ATTRIBUTION"
+               },
+               {
+                  "label": "Stress credit risk",
+                  "value": "SCR"
+               },
+               {
+                  "label": "CCAR stress credit risk",
+                  "value": "CCAR_SCR"
+               },
+               {
+                  "label": "Economic capital",
+                  "value": "EC"
+               },
+               {
+                  "label": "Not applicable",
+                  "value": "NA"
+               },
+               {
+                  "label": "Other",
+                  "value": "OTHER"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      },
+      "statusCd": {
+         "id": "statusCd",
+         "label": "Status",
+         "props": {
+            "options": [
+               {
+                  "label": "Draft",
+                  "value": "DRAFT"
+               },
+               {
+                  "label": "Preliminary",
+                  "value": "PRELIM"
+               },
+               {
+                  "label": "Approval pending",
+                  "value": "PENDING"
+               },
+               {
+                  "label": "",
+                  "value": "APROVED"
+               }
+            ]
+         },
+         "tableMeta": {},
+         "type": {
+            "compName": "Dropdown",
+            "libName": "base"
+         },
+         "validation": {
+            "lib": "CirrusLibCore"
+         }
+      }
+   },
+   "id": "AnalysisData",
+   "nameField": "name",
+   "relationships": {},
+   "searchable": true,
+   "security": {
+      "actions": {
+         "edit": false,
+         "execute": false,
+         "view": true
+      },
+      "allowSharing": true,
+      "useHierarchy": true
+   },
+   "streamAPI": true
+}

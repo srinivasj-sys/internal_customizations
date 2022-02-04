@@ -1,0 +1,455 @@
+{
+   "layouts": {
+      "base": [
+         {
+            "h": 626,
+            "i": "model_tabs",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 134
+         },
+         {
+            "h": 90,
+            "i": "model_details",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 8,
+            "x": 0,
+            "y": 44
+         },
+         {
+            "h": 25,
+            "i": "header_container",
+            "minH": 50,
+            "minW": 2,
+            "moved": false,
+            "static": false,
+            "w": 12,
+            "x": 0,
+            "y": 0
+         }
+      ],
+      "header_container": [
+         [
+            {
+               "h": 26,
+               "i": "save",
+               "minH": 26,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 1,
+               "x": 11,
+               "y": 0
+            },
+            {
+               "h": 31,
+               "i": "model_name_readonly",
+               "minH": 24,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 9
+            }
+         ]
+      ],
+      "model_details": [
+         [
+            {
+               "h": 50,
+               "i": "objectId",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 0
+            },
+            {
+               "h": 50,
+               "i": "name",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 52
+            },
+            {
+               "h": 80,
+               "i": "description",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 104
+            },
+            {
+               "h": 50,
+               "i": "engineCd",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 6,
+               "y": 72
+            },
+            {
+               "h": 50,
+               "i": "statusCd",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 6,
+               "y": 0
+            },
+            {
+               "h": 50,
+               "i": "typeCd",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 6,
+               "y": 136
+            }
+         ]
+      ],
+      "model_tabs": [
+         [
+            {
+               "h": 322,
+               "i": "codeEditor",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 12,
+               "x": 0,
+               "y": 15
+            },
+            {
+               "h": 25,
+               "i": "postCodeFlg",
+               "minH": 24,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 6,
+               "y": 357
+            },
+            {
+               "h": 25,
+               "i": "preCodeFlg",
+               "minH": 24,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 357
+            },
+            {
+               "h": 132,
+               "i": "preCodeEditor",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 0,
+               "y": 395
+            },
+            {
+               "h": 132,
+               "i": "postCodeEditor",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 6,
+               "x": 6,
+               "y": 395
+            }
+         ],
+         [],
+         [
+            {
+               "h": 550,
+               "i": "additional_comments",
+               "minH": 236,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 4,
+               "y": 0
+            },
+            {
+               "h": 286,
+               "i": "documentation_attachments",
+               "minH": 50,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 16
+            },
+            {
+               "h": 241,
+               "i": "documentation_links",
+               "minH": 54,
+               "minW": 1,
+               "moved": false,
+               "static": false,
+               "w": 4,
+               "x": 0,
+               "y": 312
+            }
+         ]
+      ]
+   },
+   "page": {
+      "entrypoints": {
+         "draft": {
+            "name": "onModelDraftLoad"
+         },
+         "edit": {
+            "name": "onModelEditLoad"
+         }
+      },
+      "events": {
+         "onAnyEvent": {
+            "name": "onAnyEvent"
+         },
+         "onTabClose": {
+            "name": "onTabClose"
+         }
+      },
+      "props": {
+         "description": "",
+         "icon": "base://MODELS",
+         "id": "Model",
+         "label": "Model",
+         "tabLabel": ""
+      }
+   },
+   "structure": {
+      "base": [
+         {
+            "compName": "TabView",
+            "id": "model_tabs",
+            "label": "appbuilder.toolboxitem.tabview.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 2
+            }
+         },
+         {
+            "compName": "Accordion",
+            "id": "model_details",
+            "label": "appbuilder.toolboxitem.accordion.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {}
+         },
+         {
+            "compName": "GroupableContainer",
+            "id": "header_container",
+            "label": "appbuilder.toolboxitem.groupableContainer.title",
+            "libName": "base",
+            "parentId": "base",
+            "props": {
+               "activeIndex": 0,
+               "headers": [
+                  "default"
+               ]
+            }
+         }
+      ],
+      "header_container": [
+         [
+            {
+               "compName": "Button",
+               "id": "save",
+               "label": "appbuilder.toolboxitem.button.title",
+               "libName": "base",
+               "parentId": "header_container",
+               "props": {}
+            },
+            {
+               "compName": "ReadonlyFieldWidget",
+               "id": "model_name_readonly",
+               "label": "appbuilder.toolboxitem.readonlyfield.title",
+               "libName": "base",
+               "parentId": "header_container",
+               "props": {
+                  "align": "start",
+                  "boldLabel": false,
+                  "boldValue": true,
+                  "colon": false
+               }
+            }
+         ]
+      ],
+      "model_details": [
+         [
+            {
+               "compName": "InputText",
+               "fieldName": "objectId",
+               "id": "objectId",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {}
+            },
+            {
+               "compName": "InputText",
+               "events": {
+                  "onChange": {
+                     "name": "onCycleNameChange"
+                  }
+               },
+               "fieldName": "name",
+               "id": "name",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {}
+            },
+            {
+               "compName": "InputTextarea",
+               "fieldName": "description",
+               "id": "description",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {
+                  "rows": 3
+               }
+            },
+            {
+               "compName": "Dropdown",
+               "fieldName": "engineCd",
+               "id": "engineCd",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {
+                  "enableClear": true
+               }
+            },
+            {
+               "compName": "Dropdown",
+               "fieldName": "statusCd",
+               "id": "statusCd",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {}
+            },
+            {
+               "compName": "Dropdown",
+               "fieldName": "typeCd",
+               "id": "typeCd",
+               "libName": "base",
+               "parentId": "model_details",
+               "props": {
+                  "enableClear": true
+               }
+            }
+         ]
+      ],
+      "model_tabs": [
+         [
+            {
+               "compName": "InputTextarea",
+               "fieldName": "codeEditor",
+               "id": "codeEditor",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {
+                  "rows": 3
+               }
+            },
+            {
+               "compName": "CheckboxField",
+               "fieldName": "postCodeFlg",
+               "id": "postCodeFlg",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {}
+            },
+            {
+               "compName": "CheckboxField",
+               "fieldName": "preCodeFlg",
+               "id": "preCodeFlg",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {}
+            },
+            {
+               "compName": "InputTextarea",
+               "fieldName": "preCodeEditor",
+               "id": "preCodeEditor",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {
+                  "rows": 3
+               }
+            },
+            {
+               "compName": "InputTextarea",
+               "fieldName": "postCodeEditor",
+               "id": "postCodeEditor",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {
+                  "rows": 3
+               }
+            }
+         ],
+         [],
+         [
+            {
+               "compName": "Comments",
+               "fieldName": "additional_comments",
+               "id": "additional_comments",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {}
+            },
+            {
+               "compName": "RGFAttachments",
+               "fieldName": "documentation_attachments",
+               "id": "documentation_attachments",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {}
+            },
+            {
+               "compName": "Links",
+               "fieldName": "documentation_links",
+               "id": "documentation_links",
+               "libName": "base",
+               "parentId": "model_tabs",
+               "props": {}
+            }
+         ]
+      ]
+   }
+}

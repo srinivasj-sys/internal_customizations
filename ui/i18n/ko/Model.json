@@ -1,0 +1,8 @@
+{
+   "Model.library.label.base.Accordion.model_details.0.title": "모델 상세 정보",
+   "Model.library.label.base.Button.save.label": "저장",
+   "Model.library.label.base.ReadonlyFieldWidget.model_name_readonly.label": "",
+   "Model.library.label.base.TabView.model_tabs.0.title": "코드",
+   "Model.library.label.base.TabView.model_tabs.1.title": "파라미터",
+   "Model.library.label.base.TabView.model_tabs.2.title": "문서"
+}

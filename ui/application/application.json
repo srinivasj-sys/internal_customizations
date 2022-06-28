@@ -1,0 +1,13 @@
+{
+	"description": "MRM v1 Solution @ SAS based on cirrus-core-v1 w/ drop-dwon",
+	"displayName": "MRM",
+	"isCore": false,
+	"pages": {
+		"Home": {
+			"name": "Home",
+			"type": "application"
+		}
+	},
+	"shortName": "TESTPATCH",
+	"version": "2022.1.1"
+}

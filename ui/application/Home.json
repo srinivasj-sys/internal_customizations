@@ -1,0 +1,17 @@
+{
+	"layouts": {
+		"base": []
+	},
+	"page": {
+		"events": {},
+		"props": {
+			"description": "The Home Page.",
+			"icon": "grooveHome",
+			"id": "Home",
+			"label": "Home Page"
+		}
+	},
+	"structure": {
+		"base": []
+	}
+}

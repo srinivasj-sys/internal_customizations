@@ -6,6 +6,10 @@
 		"Home": {
 			"name": "Home",
 			"type": "application"
+		},
+		"TestPage": {
+			"name": "TestPage",
+			"type": "application"
 		}
 	},
 	"shortName": "TESTPATCH",

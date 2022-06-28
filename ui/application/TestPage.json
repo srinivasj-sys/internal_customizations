@@ -1,0 +1,36 @@
+{
+	"layouts": {
+		"base": [
+			{
+				"h": 2,
+				"i": "findingsTable",
+				"w": 12,
+				"x": 0,
+				"y": 0
+			}
+		]
+	},
+	"page": {
+		"events": {},
+		"props": {
+			"description": "The Findings Manager",
+			"group": "model",
+			"icon": "grooveIssue",
+			"id": "Findings",
+			"label": "Findings"
+		}
+	},
+	"structure": {
+		"base": [
+			{
+				"compName": "ObjectManager",
+				"id": "findingsTable",
+				"libName": "base",
+				"parentId": "base",
+				"props": {
+					"objectType": "Finding"
+				}
+			}
+		]
+	}
+}
